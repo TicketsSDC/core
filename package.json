@@ -1,0 +1,19 @@
+{
+  "name": "tickettrader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "author": "Isaac Evavold <isaacevavold@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "handlebars": "^4.0.4",
+    "mongoose": "^4.2.4",
+    "morgan": "^1.6.1",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.0.0"
+  },
+  "devDependencies": {}
+}

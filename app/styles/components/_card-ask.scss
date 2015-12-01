@@ -1,0 +1,18 @@
+// [Tickets] app/style/components/_card-ask.scss
+
+.card.ask {
+    &.unread {
+        // background-color: #619DE8;
+    }
+
+    .ask-price {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+
+        .dollar-sign {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tickets</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/main.css">
+	</head>
+	<body>
+		<div class="feed">
+		{{#each games}}
+			{{> card-game}}
+		{{else}}
+			<h2 style="text-align:center;color:gray;">No upcoming games. Please check back later</h2>
+		{{/each}}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+// [Tickets] app/styles/main.scss
+
+@import 'base/typography';
+@import 'themes/global';
+
+body {
+    margin: 0;
+    background-color: $light-gray;
+}
+
+@import 'components/card',
+        'components/card-game',
+        'components/card-ask',
+        'components/feed',
+        'components/banner';
+
+@import 'pages/frontpage';

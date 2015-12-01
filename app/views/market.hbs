@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tickets</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/main.css">
+	</head>
+	<body>
+		<div class="banner fixed">
+			<div class="teams">
+				<div class="team">
+					<div class="team-mascot-image" style="background-image:url(/public/images/teams/{{game.teams.home.slug}}.png)"></div>
+					<h2 class="team-name">{{game.teams.home.name}}</h2>
+				</div>
+				<div class="team">
+					<div class="team-mascot-image" style="background-image:url(/public/images/teams/{{game.teams.away.slug}}.png)"></div>
+					<h2 class="team-name">{{game.teams.away.name}}</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="feed">
+			{{#each asks}}
+				{{> card-ask}}
+			{{/each}}
+		</div>
+	</body>
+</html>

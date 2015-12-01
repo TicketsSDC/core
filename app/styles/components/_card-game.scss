@@ -1,0 +1,172 @@
+// [Tickets] app/styles/components/_card-game.scss
+
+@import '../themes/global';
+
+.card.game {
+    .teams {
+        padding: 32px;
+        position: relative;
+
+        .team-mascot-image {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .team-name {
+            height: 34px;
+            padding: 0;
+            line-height: 34px;
+        }
+
+        .team-home {
+            margin: 8px 0 0 0;
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+
+    .stats {
+        border-top: 2px solid $light-gray;
+
+        .stat {
+            .stat-description {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            .stat-value {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .card.game {
+        .teams {
+            .team-description {
+                width: 50%;
+                display: inline-block;
+                box-sizing: border-box;
+                border-width: 0 1px 0 0;
+                border-style: solid;
+                border-color: $light-gray;
+
+                &:nth-child(2) {
+                    // styles for second team description
+                    border-width: 0 0 0 1px;
+                }
+            }
+
+            .team-mascot-image {
+                width: 96px;
+                height: 96px;
+                margin: 0 auto;
+            }
+
+            .team-name {
+                margin: 8px auto 0;
+                text-align: center;
+            }
+
+            .team-home {
+                text-align: center;
+            }
+        }
+
+        .stats {
+            height: 80px;
+            text-align: center;
+
+            .stat {
+                width: 30%;
+                height: 80px;
+                display: inline-block;
+
+                .stat-description {
+                    width: 100%;
+                    margin: 16px 0 0 0;
+                    padding: 0;
+                }
+
+                .stat-value {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .card.game {
+        .teams {
+            $team-mascot-image-width: 36px;
+            $team-mascot-image-height: 64px;
+
+            padding: 16px;
+
+            .team-description {
+                width: auto;
+                height: $team-mascot-image-height;
+                position: relative;
+
+                & + .team-description {
+                    margin-top: 16px;
+                }
+            }
+
+            .team-mascot-image {
+                width: $team-mascot-image-width;
+                height: $team-mascot-image-height;
+                float: left;
+            }
+
+            .team-name {
+                height: 28px;
+                margin: 0 0 0 $team-mascot-image-width + 16px;
+                padding-top: 4px;
+                font-size: 1.2rem;
+            }
+
+            .team-home {
+                margin: 0 0 0 $team-mascot-image-width + 16px;
+            }
+        }
+
+        .stats {
+            padding: 8px 0;
+
+            .stat {
+                height: 22px;
+                padding: 8px 0 8px 16px;
+
+                .stat-description, .stat-value {
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    font-size: 1rem;
+
+                    &.stat-description {
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card.game .teams {
+        .team-mascot-image {
+            display: none;
+        }
+
+        .team-name, .team-home {
+            margin-left: 0;
+        }
+    }
+}

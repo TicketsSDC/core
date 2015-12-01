@@ -1,0 +1,94 @@
+// [Tickets] app/styles/components/_banner.scss
+
+.banner {
+    position: absolute;
+	top: 0;
+    right: 0;
+    left: 0;
+	padding: 16px 0;
+    background-color: white;
+    box-shadow: 1px 2px 8px $dark-gray;
+    z-index: 1000;
+
+    .teams {
+        width: 100%;
+        max-width: 768px;
+        height: 48px;
+        margin: 0 auto;
+        position: relative;
+        // background-color: gray;
+
+        .team {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            box-sizing: border-box;
+            border-style: solid;
+
+            border-color: $light-gray;
+        }
+
+        .team-mascot-image {
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 0;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .team-name {
+            height: 48px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            display: block;
+            // background-color: gray;
+            line-height: 48px;
+        }
+
+        $team-mascot-offset: 24px;
+
+        .team:nth-child(1) {
+            left: 0;
+            border-width: 0 1px 0 0;
+            // background-color: red;
+
+            .team-mascot-image {
+                right: $team-mascot-offset;
+                // background-color: #AA0000;
+            }
+
+            .team-name {
+                right: $team-mascot-offset + 48px + 16px;
+                left: 0;
+                text-align: right;
+            }
+        }
+
+        .team:nth-child(2) {
+            right: 0;
+            border-width: 0 0 0 1px;
+            // background-color: blue;
+
+            .team-mascot-image {
+                left: $team-mascot-offset;
+                // background-color: #0000AA;
+            }
+
+            .team-name {
+                left: $team-mascot-offset + 48px + 16px;
+                right: 0;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+    }
+}

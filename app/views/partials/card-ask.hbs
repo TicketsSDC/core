@@ -1,0 +1,8 @@
+{{#if unread}}
+<div class="card ask unread">
+{{else}}
+<div class="card ask">
+{{/if}}
+	<p class="ask-price">{{formatDollars price}}</p>
+	<p class="ask-distance">{{formatDistance distance}}</p>
+</div>

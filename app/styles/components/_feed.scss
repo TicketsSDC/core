@@ -1,0 +1,29 @@
+// [Tickets] app/styles/components/_feed.scss
+
+@import '../themes/global';
+
+.feed {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 64px 0;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    left: 16px;
+
+    .loading-spinner {
+        margin: 32px;
+
+        .sk-circle {
+            margin: 0 auto;
+
+            .sk-child:before {
+                background-color: $gray;
+            }
+        }
+    }
+}
+
+.banner + .feed {
+    margin-top: 64px;
+}
