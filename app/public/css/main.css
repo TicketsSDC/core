@@ -34,6 +34,9 @@ body {
     font-weight: 700;
     color: #A5A6A9; }
 
+.card.game a:link, .card.game a:visited, .card.game a:hover {
+  color: black;
+  cursor: pointer; }
 .card.game .teams {
   padding: 32px;
   position: relative; }

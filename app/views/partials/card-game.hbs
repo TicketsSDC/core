@@ -1,15 +1,17 @@
 <div class="card game no-padding">
-	<div class="teams">
-		{{~> subcard-team teams.home ~}}{{~> subcard-team teams.away ~}}
-	</div>
-	<div class="stats"><div class="stat">
-		<p class="stat-description">Where</p>
-		<p class="stat-value">{{location.city}}, {{location.state_code}}</p>
-	</div><div class="stat">
-		<p class="stat-description">When</p>
-		<p class="stat-value">November 14</p>
-	</div><div class="stat">
-		<p class="stat-description">Student Tickets</p>
-		<p class="stat-value">0</p>
-	</div></div>
+	<a href="/game/{{slug}}">
+		<div class="teams">
+			{{~> subcard-team teams.home ~}}{{~> subcard-team teams.away ~}}
+		</div>
+		<div class="stats"><div class="stat">
+			<p class="stat-description">Where</p>
+			<p class="stat-value">{{location.city}}, {{location.state_code}}</p>
+		</div><div class="stat">
+			<p class="stat-description">When</p>
+			<p class="stat-value">November 14</p>
+		</div><div class="stat">
+			<p class="stat-description">Student Tickets</p>
+			<p class="stat-value">0</p>
+		</div></div>
+	</a>
 </div>

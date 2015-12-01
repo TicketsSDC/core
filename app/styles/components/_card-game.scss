@@ -3,6 +3,11 @@
 @import '../themes/global';
 
 .card.game {
+    a:link, a:visited, a:hover {
+        color: black;
+        cursor: pointer;
+    }
+
     .teams {
         padding: 32px;
         position: relative;
