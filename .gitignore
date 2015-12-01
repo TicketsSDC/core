@@ -6,3 +6,5 @@ config/auth.js
 
 # SASS build cache
 .sass-cache
+
+*.map
