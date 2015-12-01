@@ -1,7 +1,7 @@
 # Dependency directory
 node_modules
 
-# hide sensetive config variables
+# hide sensitive config variables
 config/auth.js
 
 # SASS build cache
